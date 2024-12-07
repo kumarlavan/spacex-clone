@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'D-DIN';
 }
 .home{
     width: 100%;
@@ -49,7 +50,7 @@
     font-weight: 600;
     color: white;
     font-size: small;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 .navlist>ul>li:hover{
  text-decoration: underline;
@@ -66,7 +67,7 @@
     font-size: medium;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: serif;
+    /* font-family: serif; */
     color: white;
     /* background-color: green; */
 }
@@ -126,7 +127,7 @@
     width: 80%;
     height: 40%;
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 600;
     /* background-color: blue; */
   }
   .content>button{
@@ -185,4 +186,135 @@
     font-size: small;
     text-transform: uppercase;
     /* background-color: red; */
+  }
+        /* mobile device css */
+  @media screen and (max-width:426px) {
+    .navbar{
+      justify-content: center;
+    }
+    .navbar>.logo{
+      width: 80%;
+      padding: 40px;
+      /* background-color: red; */
+      justify-content: center;
+    }
+    .navlist{
+      display: none;
+    }
+    .navbar>.menubar{
+      width: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: green; */
+      padding-right: 0;
+      font-size: 23px;
+    }
+    .navbar>.menubar>span:nth-child(1){
+      display: none;
+    }
+
+    
+    .content{
+      width: 70%;
+      top: 60%;
+      left: 6%;
+      padding: 0;
+      
+    }
+    .content>h1{
+      width: 100%;
+      font-size:35px;
+    }
+    .image-container>img{
+      object-fit: cover;
+      
+    }
+    footer>ul{
+      width: 70%;
+      font-size: 11px;
+      /* background-color: red; */
+    }
+  }
+        /* tablet device css */
+  @media screen and (min-width:426px) and (max-width:769px) {
+    .navbar{
+      justify-content: end;
+     
+    }
+    .navbar>.logo{
+      width: 40%;
+      font-size: 20px;
+      /* padding: 40px; */
+      /* background-color: red; */
+      justify-content: center;
+    }
+    .logo>svg{
+      margin-left: 0;
+      width: 300px;
+      height: 100px;
+
+    }
+    .navlist{
+      display: none;
+    }
+    .navbar>.menubar{
+      width: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: green; */
+      padding-right: 0;
+      font-size: 23px;
+    }
+    .navbar>.menubar>span:nth-child(1){
+      display: none;
+    }
+    .content{
+      width: 70%;
+      top: 60%;
+      left: 6%;
+      padding: 0;
+      
+    }
+    .content>h1{
+      width: 65%;
+      height: auto;
+      font-size:35px;
+    }
+    .image-container>img{
+      object-fit: cover;
+      
+    }
+    footer>ul{
+      width: 45%;
+      font-size: 14px;
+      /* background-color: red; */
+    }
+  }
+
+        /* small laptop decive css  */
+
+  @media screen and (min-width:769px) and (max-width:1051px) {
+    .navbar{
+      /* background-color: red; */
+    }
+    .navbar>.logo{
+      padding: 0;
+      /* background-color: yellow; */
+    }
+    .navbar>.navlist{
+      width: 70%;
+      /* background-color: blue; */
+    }
+    .navlist>ul{
+      font-size: 10px;
+    }
+    .navbar>.menubar{
+      width: 10%;
+      padding-right: 10px;
+      gap: 10px;
+      /* background-color: green; */
+    }
+
   }
